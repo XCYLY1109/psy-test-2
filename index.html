@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>森林心理年龄 · 12 个小故事测出你的心理年龄</title>
+<meta name="description" content="12 个森林小故事，8 个年龄段，测出你 3 到 99 岁的心理年龄。">
+<meta name="theme-color" content="#FBF3DE">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FBF3DE'/%3E%3Ccircle cx='16' cy='18' r='7' fill='%235C8A54'/%3E%3Ccircle cx='13' cy='16' r='1.6' fill='%23FBF3DE'/%3E%3Ccircle cx='19' cy='16' r='1.6' fill='%23FBF3DE'/%3E%3Crect x='12' y='6' width='3' height='6' rx='1.5' fill='%23ED7A55'/%3E%3Crect x='17' y='6' width='3' height='6' rx='1.5' fill='%23ED7A55'/%3E%3C/svg%3E">
+<style>
+:root{
+  --cream:#FBF3DE;
+  --paper:#FFFDF4;
+  --ink:#2C4030;
+  --ink2:#5E7059;
+  --ink3:#93A08A;
+  --line:#E6DCC2;
+  --green:#5C8A54;
+  --deep:#2C4030;
+  --sun:#F2BF48;
+  --sun-soft:#FBE3A6;
+  --coral:#ED7A55;
+  --sky:#9BC8D8;
+  --berry:#C4698A;
+  --shadow:rgba(44,64,48,.16);
+  --sans:"PingFang SC","Noto Sans SC","Source Han Sans SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  padding:0 0 86px;
+  background:var(--cream);
+  background-image:radial-gradient(rgba(44,64,48,.075) 1px,transparent 1.6px);
+  background-size:20px 20px;
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:16px;
+  line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:600px;margin:0 auto;padding:0 18px}
+.view{animation:pop .38s cubic-bezier(.22,.9,.32,1.15) both}
+@keyframes pop{from{opacity:0;transform:translateY(10px) scale(.985)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.view{animation:none}*{transition:none!important}}
+[hidden]{display:none!important}
+
+/* ===== 通用小零件 ===== */
+.card{
+  background:var(--paper);
+  border:3px solid var(--ink);
+  border-radius:22px;
+  box-shadow:5px 5px 0 var(--shadow);
+}
+.tag{
+  display:inline-block;
+  padding:4px 12px;
+  border-radius:999px;
+  border:2px solid var(--ink);
+  background:var(--sun-soft);
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.02em;
+  line-height:1.6;
+}
+.btn{
+  display:block;
+  width:100%;
+  padding:16px 20px;
+  border-radius:999px;
+  border:3px solid var(--ink);
+  background:var(--green);
+  color:#FFFDF4;
+  font-family:var(--sans);
+  font-size:18px;
+  font-weight:800;
+  letter-spacing:.08em;
+  cursor:pointer;
+  box-shadow:5px 5px 0 var(--ink);
+  transition:transform .12s,box-shadow .12s,background .15s;
+}
+.btn:hover{background:#4F7B48}
+.btn:active{transform:translate(4px,4px);box-shadow:1px 1px 0 var(--ink)}
+.btn-2{
+  background:var(--paper);
+  color:var(--ink);
+  box-shadow:5px 5px 0 var(--shadow);
+}
+.btn-2:hover{background:var(--sun-soft)}
+.btn-2:active{box-shadow:1px 1px 0 var(--shadow)}
+
+/* ===== 封面 ===== */
+.cover{padding-top:14px}
+.hero{
+  position:relative;
+  height:172px;
+  border:3px solid var(--ink);
+  border-radius:26px;
+  box-shadow:5px 5px 0 var(--shadow);
+  overflow:hidden;
+  background:#DCEEDC;
+}
+.hero svg{display:block;width:100%;height:100%}
+.hero-cap{
+  position:absolute;
+  left:14px;bottom:12px;
+  background:var(--paper);
+  border:2px solid var(--ink);
+  border-radius:999px;
+  padding:3px 12px;
+  font-size:13px;
+  font-weight:700;
+  transform:rotate(-2deg);
+}
+.title{
+  margin:26px 0 0;
+  font-size:38px;
+  line-height:1.24;
+  font-weight:800;
+  letter-spacing:-.01em;
+}
+.title .mark{
+  position:relative;
+  display:inline-block;
+  color:var(--coral);
+}
+.title .mark::after{
+  content:"";
+  position:absolute;
+  left:0;right:0;bottom:2px;
+  height:10px;
+  background:var(--sun);
+  border-radius:6px;
+  opacity:.55;
+  z-index:-1;
+}
+.lede{
+  margin:16px 0 0;
+  color:var(--ink2);
+  font-size:16px;
+  line-height:1.8;
+}
+.meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:18px 0 0;
+}
+.meta span{
+  font-size:13px;
+  font-weight:700;
+  color:var(--ink2);
+  background:#F2EAD0;
+  border-radius:999px;
+  padding:4px 12px;
+}
+.start-wrap{margin:26px 0 0}
+.start-note{
+  margin:10px 0 0;
+  font-size:13px;
+  color:var(--ink3);
+  text-align:center;
+}
+.dim-block{margin-top:32px}
+.dim-head{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:12px;
+}
+.dim-head b{font-size:15px;font-weight:800}
+.dim-head i{flex:1;height:2px;background:var(--line);border-radius:2px}
+.dim-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+}
+.dim-cell{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  background:var(--paper);
+  border:2px solid var(--line);
+  border-radius:16px;
+  padding:8px 10px;
+  min-width:0;
+}
+.dim-cell .ic{flex:0 0 34px;width:34px;height:34px}
+.dim-cell .tx{min-width:0}
+.dim-cell .nm{font-size:14px;font-weight:800;line-height:1.3}
+.dim-cell .ds{font-size:12px;color:var(--ink3);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* ===== 答题 ===== */
+.quiz{padding-top:16px}
+.qbar{position:relative;padding-bottom:6px}
+.qtop{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  margin-bottom:8px;
+}
+.qnum{font-size:15px;font-weight:800;color:var(--ink)}
+.qnum b{font-size:24px;color:var(--coral)}
+.qnum em{font-style:normal;color:var(--ink3);font-size:14px;font-weight:700}
+.qtip{font-size:13px;color:var(--ink3)}
+.dots{display:flex;gap:5px}
+.dots i{
+  flex:1;
+  height:10px;
+  border-radius:6px;
+  background:#EBE2C9;
+  transition:background .25s,transform .25s;
+}
+.dots i.on{background:var(--green)}
+.dots i.now{background:var(--sun);transform:scaleY(1.25)}
+.scene{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  margin:20px 0 16px;
+}
+.scene-ic{
+  flex:0 0 62px;
+  width:62px;height:62px;
+  border-radius:50%;
+  border:3px solid var(--ink);
+  background:var(--sun-soft);
+  overflow:hidden;
+  transform:rotate(-3deg);
+}
+.scene-ic svg{display:block;width:100%;height:100%}
+.qtext{
+  flex:1;
+  min-width:0;
+  margin:0;
+  font-size:21px;
+  line-height:1.55;
+  font-weight:800;
+  letter-spacing:-.01em;
+  padding-top:2px;
+}
+.opts{display:flex;flex-direction:column;gap:10px;margin-top:6px}
+.opt{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  width:100%;
+  min-height:56px;
+  padding:14px 14px;
+  border:2px solid var(--ink);
+  border-radius:16px;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:16px;
+  line-height:1.5;
+  font-weight:600;
+  text-align:left;
+  cursor:pointer;
+  box-shadow:4px 4px 0 var(--shadow);
+  transition:transform .12s,box-shadow .12s,background .15s;
+}
+.opt:hover{background:#FFF9E4}
+.opt:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--shadow)}
+.opt-key{
+  flex:0 0 26px;
+  width:26px;height:26px;
+  border-radius:50%;
+  background:var(--sun-soft);
+  border:2px solid var(--ink);
+  font-size:13px;
+  font-weight:800;
+  display:flex;align-items:center;justify-content:center;
+  margin-top:1px;
+  transition:background .15s;
+}
+.opt.is-on{background:var(--sun);box-shadow:1px 1px 0 var(--shadow);transform:translate(3px,3px)}
+.opt.is-on .opt-key{background:var(--paper)}
+.qfoot{margin-top:20px;display:flex;justify-content:space-between}
+.lnk{
+  border:0;background:none;
+  padding:8px 0;
+  color:var(--ink3);
+  font-family:var(--sans);
+  font-size:14px;
+  font-weight:700;
+  cursor:pointer;
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+.lnk:hover{color:var(--ink)}
+
+/* ===== 结果 ===== */
+.result{padding-top:14px}
+.res-card{padding:22px 18px;text-align:center;position:relative}
+.res-tag{
+  position:absolute;top:-14px;left:50%;
+  transform:translateX(-50%) rotate(-2deg);
+}
+.age-circle{
+  position:relative;
+  width:168px;height:168px;
+  margin:8px auto 0;
+  border-radius:50%;
+  border:3px solid var(--ink);
+  background:var(--sun);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:inset 0 -8px 0 rgba(44,64,48,.13);
+}
+.age-circle span{font-size:72px;font-weight:800;line-height:1;letter-spacing:-.04em}
+.age-circle small{
+  font-size:19px;font-weight:800;
+  margin-left:4px;align-self:flex-end;
+  padding-bottom:32px;
+}
+.age-note{font-size:13px;color:var(--ink3);margin:10px 0 0}
+.res-icon{
+  width:88px;height:88px;
+  margin:2px auto 0;
+  border-radius:50%;
+  border:3px solid var(--ink);
+  background:var(--paper);
+  overflow:hidden;
+  transform:rotate(3deg);
+  box-shadow:3px 3px 0 var(--shadow);
+}
+.res-icon svg{display:block;width:100%;height:100%}
+.type-name{
+  margin:10px 0 0;
+  font-size:28px;
+  font-weight:800;
+  line-height:1.3;
+  letter-spacing:-.01em;
+}
+.type-line{
+  margin:8px 0 0;
+  font-size:16px;
+  color:var(--coral);
+  font-weight:700;
+  line-height:1.6;
+}
+.datebar{
+  margin-top:16px;
+  padding-top:14px;
+  border-top:2px dashed var(--line);
+  display:flex;
+  justify-content:space-between;
+  font-size:12px;
+  color:var(--ink3);
+}
+
+.sect{margin-top:26px}
+.sect-h{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:12px;
+}
+.sect-h b{font-size:16px;font-weight:800}
+.sect-h i{flex:1;height:2px;background:var(--line);border-radius:2px}
+.bars{background:var(--paper);border:2px solid var(--line);border-radius:18px;padding:14px 14px 6px}
+.brow{margin-bottom:12px}
+.brow-top{display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:700}
+.brow-top .v{color:var(--ink3);font-weight:700}
+.btrack{height:7px;border-radius:6px;background:#EEE5CC;margin-top:5px;overflow:hidden}
+.bfill{display:block;height:7px;width:0;border-radius:6px;background:var(--green);transition:width .7s cubic-bezier(.22,.61,.36,1)}
+.bfill.top{background:var(--coral)}
+.traits{list-style:none;margin:0;padding:0}
+.traits li{
+  display:flex;
+  gap:10px;
+  padding:11px 0;
+  border-bottom:1.5px dashed var(--line);
+  font-size:15px;
+  line-height:1.6;
+}
+.traits li:last-child{border-bottom:0}
+.traits .n{
+  flex:0 0 22px;width:22px;height:22px;
+  border-radius:50%;
+  background:var(--sun-soft);
+  border:2px solid var(--ink);
+  font-size:11px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;
+  margin-top:2px;
+}
+.pair{display:flex;flex-direction:column;gap:10px}
+.pair-item{
+  background:var(--paper);
+  border:2px solid var(--line);
+  border-radius:16px;
+  padding:12px 14px;
+}
+.pair-k{font-size:12px;font-weight:800;color:var(--ink3);letter-spacing:.04em}
+.pair-v{font-size:15px;line-height:1.7;margin-top:2px}
+.advice{
+  background:var(--sun-soft);
+  border:2px solid var(--ink);
+  border-radius:18px;
+  padding:14px 16px;
+  box-shadow:4px 4px 0 var(--shadow);
+}
+.advice-k{font-size:12px;font-weight:800;color:var(--coral);letter-spacing:.06em}
+.advice-v{margin:4px 0 0;font-size:17px;font-weight:700;line-height:1.65}
+.cardwrap{margin-top:12px}
+#shareCanvas{
+  display:block;
+  width:100%;max-width:330px;
+  margin:0 auto;
+  border:2px solid var(--line);
+  border-radius:14px;
+}
+.hint{font-size:13px;color:var(--ink3);margin:0 0 10px}
+.btn-row{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.restart{margin:26px 0 0;text-align:center}
+
+/* ===== 页脚声明 ===== */
+.legal{
+  position:fixed;
+  left:0;right:0;bottom:0;
+  z-index:6;
+  padding:8px 16px calc(8px + env(safe-area-inset-bottom));
+  background:rgba(251,243,222,.95);
+  border-top:2px solid var(--line);
+  font-size:12px;
+  line-height:1.5;
+  color:var(--ink3);
+  text-align:center;
+}
+.toast{
+  position:fixed;
+  left:50%;bottom:98px;
+  transform:translate(-50%,10px);
+  z-index:9;
+  padding:9px 16px;
+  border-radius:999px;
+  border:2px solid var(--ink);
+  background:var(--paper);
+  color:var(--ink);
+  font-size:14px;
+  font-weight:700;
+  opacity:0;pointer-events:none;
+  transition:opacity .2s,transform .2s;
+}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+@media (min-width:768px){
+  .wrap{max-width:640px;padding:0 30px}
+  .title{font-size:48px}
+  .qtext{font-size:24px}
+  .age-circle{width:186px;height:186px}
+  .age-circle span{font-size:80px}
+  .dim-grid{grid-template-columns:repeat(4,1fr)}
+  .btn-row{flex-direction:row}
+  .btn-row>*{flex:1}
+  #shareCanvas{max-width:380px}
+}
+@media (max-width:360px){
+  .title{font-size:32px}
+  .qtext{font-size:19px}
+  .age-circle{width:150px;height:150px}
+  .age-circle span{font-size:62px}
+  .dim-grid{gap:8px}
+  .dim-cell .ds{display:none}
+}
+</style>
+</head>
+<body>
+
+<main id="app">
+
+  <!-- ===== 视图：封面 ===== -->
+  <section class="view cover" id="viewCover">
+    <div class="wrap">
+      <div class="hero">
+        <svg viewBox="0 0 600 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="600" height="200" fill="#D8ECDB"/>
+          <circle cx="468" cy="52" r="34" fill="#F2BF48"/>
+          <circle cx="468" cy="52" r="46" fill="#F2BF48" opacity=".22"/>
+          <path d="M0 152 Q120 118 240 148 T480 146 T600 150 L600 200 L0 200Z" fill="#8FBE86"/>
+          <path d="M0 172 Q140 150 300 172 T600 168 L600 200 L0 200Z" fill="#6E9E68"/>
+          <g fill="#4C7350">
+            <path d="M92 158 L120 96 L148 158Z"/>
+            <path d="M96 132 L120 78 L144 132Z"/>
+            <rect x="115" y="154" width="10" height="22" rx="4" fill="#7A5A3C"/>
+          </g>
+          <g fill="#3F6444">
+            <path d="M206 162 L226 116 L246 162Z"/>
+            <rect x="221" y="158" width="9" height="18" rx="4" fill="#7A5A3C"/>
+          </g>
+          <g fill="#5A8158">
+            <path d="M318 156 L348 88 L378 156Z"/>
+            <path d="M322 128 L348 68 L374 128Z"/>
+            <rect x="343" y="152" width="11" height="24" rx="4" fill="#7A5A3C"/>
+          </g>
+          <circle cx="520" cy="168" r="14" fill="#4C7350"/>
+          <circle cx="536" cy="174" r="10" fill="#3F6444"/>
+          <circle cx="150" cy="176" r="11" fill="#4C7350"/>
+          <g fill="#ED7A55">
+            <circle cx="70" cy="60" r="5"/>
+            <circle cx="84" cy="48" r="4"/>
+            <circle cx="58" cy="46" r="4"/>
+          </g>
+        </svg>
+        <span class="hero-cap">森林里的一天</span>
+      </div>
+
+      <h1 class="title">你的心理年龄，<br>在森林里是<span class="mark">几岁</span>？</h1>
+      <p class="lede">十二个小故事，每个故事里都有只小动物要做一次选择。你替它选，它就替你把心理年龄说出来——3 岁到 99 岁，每 12 岁一档。</p>
+
+      <div class="meta">
+        <span>12 个故事</span><span>8 个年龄段</span><span>约 2 分钟</span><span>做完能存分享卡</span>
+      </div>
+
+      <div class="start-wrap">
+        <button class="btn" id="startBtn">进森林看看</button>
+        <p class="start-note">凭第一反应选，不用想太久</p>
+      </div>
+
+      <div class="dim-block">
+        <div class="dim-head"><b>你会遇到八只小动物</b><i></i></div>
+        <div class="dim-grid" id="dimGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 视图：答题 ===== -->
+  <section class="view quiz" id="viewQuiz" hidden></section>
+
+  <!-- ===== 视图：结果 ===== -->
+  <section class="view result" id="viewResult" hidden></section>
+
+</main>
+
+<footer class="legal">本测试基于大众心理学趣味模型改编，仅供自我觉察参考，不构成心理诊断或治疗建议</footer>
+
+<script>
+/* ===== 小动物插画（内联 SVG，随页面自带，无外链）===== */
+function icon(key){
+  var body = {
+    ow: '<rect width="100" height="100" fill="#F7E9C6"/>'
+      + '<path d="M30 32 L24 10 L44 24Z" fill="#A0754C"/><path d="M70 32 L76 10 L56 24Z" fill="#A0754C"/>'
+      + '<ellipse cx="50" cy="60" rx="31" ry="31" fill="#B98A5E"/>'
+      + '<ellipse cx="50" cy="64" rx="22" ry="25" fill="#EBCFA8"/>'
+      + '<circle cx="38" cy="51" r="12.5" fill="#FFFDF4"/><circle cx="62" cy="51" r="12.5" fill="#FFFDF4"/>'
+      + '<circle cx="38" cy="51" r="5" fill="#2C4030"/><circle cx="62" cy="51" r="5" fill="#2C4030"/>'
+      + '<path d="M50 58 L43.5 67 L56.5 67Z" fill="#E9A14A"/>',
+    sq: '<rect width="100" height="100" fill="#FBE3A6"/>'
+      + '<ellipse cx="80" cy="66" rx="15" ry="27" fill="#C97B45" transform="rotate(20 80 66)"/>'
+      + '<path d="M30 34 L24 13 L46 26Z" fill="#D98A55"/><path d="M66 32 L76 13 L52 25Z" fill="#D98A55"/>'
+      + '<circle cx="48" cy="55" r="26" fill="#DB8B57"/>'
+      + '<ellipse cx="48" cy="64" rx="15" ry="11.5" fill="#F6DDBE"/>'
+      + '<circle cx="39" cy="50" r="4.6" fill="#2C4030"/><circle cx="57" cy="50" r="4.6" fill="#2C4030"/>'
+      + '<path d="M44.5 60 L51.5 60 L48 65.5Z" fill="#2C4030"/>'
+      + '<circle cx="31" cy="60" r="5" fill="#EF9B7E" opacity=".5"/><circle cx="65" cy="60" r="5" fill="#EF9B7E" opacity=".5"/>',
+    hg: '<rect width="100" height="100" fill="#F8DCC7"/>'
+      + '<path d="M16 68 L20 42 L27 56 L32 32 L39 50 L45 26 L50 48 L56 26 L62 50 L68 32 L75 56 L82 42 L85 68Z" fill="#8A6A4E"/>'
+      + '<ellipse cx="50" cy="68" rx="30" ry="20" fill="#B08A63"/>'
+      + '<ellipse cx="50" cy="72" rx="15.5" ry="12.5" fill="#F3DCC0"/>'
+      + '<circle cx="44" cy="69" r="3.6" fill="#2C4030"/><circle cx="56" cy="69" r="3.6" fill="#2C4030"/>'
+      + '<path d="M47.5 76 L52.5 76 L50 79.5Z" fill="#2C4030"/>',
+    rb: '<rect width="100" height="100" fill="#FBE6EC"/>'
+      + '<ellipse cx="38" cy="26" rx="8.5" ry="20" fill="#F6E3D2" transform="rotate(-9 38 26)"/>'
+      + '<ellipse cx="62" cy="26" rx="8.5" ry="20" fill="#F6E3D2" transform="rotate(9 62 26)"/>'
+      + '<ellipse cx="38" cy="27" rx="4" ry="13" fill="#EFB8C0" transform="rotate(-9 38 27)"/>'
+      + '<ellipse cx="62" cy="27" rx="4" ry="13" fill="#EFB8C0" transform="rotate(9 62 27)"/>'
+      + '<circle cx="50" cy="60" r="27" fill="#F9EBDB"/>'
+      + '<circle cx="39" cy="57" r="4.2" fill="#2C4030"/><circle cx="61" cy="57" r="4.2" fill="#2C4030"/>'
+      + '<path d="M46.5 66 L53.5 66 L50 71Z" fill="#E58B9C"/>'
+      + '<circle cx="30" cy="66" r="6" fill="#EFB8C0" opacity=".65"/><circle cx="70" cy="66" r="6" fill="#EFB8C0" opacity=".65"/>',
+    dr: '<rect width="100" height="100" fill="#DDEEF2"/>'
+      + '<g stroke="#8A6A4E" stroke-width="3.2" fill="none" stroke-linecap="round">'
+      + '<path d="M38 36 L34 22 L27 16"/><path d="M38 36 L31 30 L24 31"/>'
+      + '<path d="M62 36 L66 22 L73 16"/><path d="M62 36 L69 30 L76 31"/></g>'
+      + '<ellipse cx="30" cy="52" rx="9" ry="5.5" fill="#C99A6B" transform="rotate(-24 30 52)"/>'
+      + '<ellipse cx="70" cy="52" rx="9" ry="5.5" fill="#C99A6B" transform="rotate(24 70 52)"/>'
+      + '<circle cx="50" cy="58" r="25" fill="#CFA173"/>'
+      + '<ellipse cx="50" cy="68" rx="13" ry="10" fill="#F0DBBF"/>'
+      + '<circle cx="41" cy="55" r="4.2" fill="#2C4030"/><circle cx="59" cy="55" r="4.2" fill="#2C4030"/>'
+      + '<path d="M47 66 L53 66 L50 70.5Z" fill="#6B4A32"/>',
+    tt: '<rect width="100" height="100" fill="#E4F0DC"/>'
+      + '<ellipse cx="60" cy="72" rx="34" ry="21" fill="#7FA36B"/>'
+      + '<ellipse cx="60" cy="72" rx="22" ry="13" fill="none" stroke="#5F7F51" stroke-width="2.6"/>'
+      + '<path d="M60 59 L60 85 M47 72 L73 72" stroke="#5F7F51" stroke-width="2.6" fill="none"/>'
+      + '<circle cx="29" cy="58" r="16" fill="#A8C58B"/>'
+      + '<circle cx="24" cy="55" r="3.4" fill="#2C4030"/><circle cx="35" cy="55" r="3.4" fill="#2C4030"/>'
+      + '<path d="M26 64 Q29.5 67 33 64" stroke="#2C4030" stroke-width="2.2" fill="none" stroke-linecap="round"/>',
+    be: '<rect width="100" height="100" fill="#FDF1CC"/>'
+      + '<ellipse cx="34" cy="40" rx="12" ry="17" fill="#FFFFFF" opacity=".8" transform="rotate(-22 34 40)"/>'
+      + '<ellipse cx="66" cy="40" rx="12" ry="17" fill="#FFFFFF" opacity=".8" transform="rotate(22 66 40)"/>'
+      + '<ellipse cx="50" cy="62" rx="23" ry="27" fill="#F2BF48"/>'
+      + '<rect x="34" y="48" width="33" height="6" rx="3" fill="#2C4030"/>'
+      + '<rect x="32" y="62" width="37" height="6" rx="3" fill="#2C4030"/>'
+      + '<rect x="34" y="76" width="33" height="6" rx="3" fill="#2C4030"/>'
+      + '<path d="M40 34 Q36 24 32 22 M60 34 Q64 24 68 22" stroke="#2C4030" stroke-width="2.6" fill="none" stroke-linecap="round"/>'
+      + '<circle cx="43" cy="42" r="4" fill="#2C4030"/><circle cx="57" cy="42" r="4" fill="#2C4030"/>',
+    ct: '<rect width="100" height="100" fill="#EFE6DA"/>'
+      + '<path d="M28 38 L22 14 L44 26Z" fill="#BDB0A0"/><path d="M72 38 L78 14 L56 26Z" fill="#BDB0A0"/>'
+      + '<path d="M29 33 L26 20 L38 27Z" fill="#EFB8C0" opacity=".8"/><path d="M71 33 L74 20 L62 27Z" fill="#EFB8C0" opacity=".8"/>'
+      + '<circle cx="50" cy="59" r="26" fill="#C9BDAD"/>'
+      + '<path d="M36 55 Q40 50 44 55" stroke="#2C4030" stroke-width="2.6" fill="none" stroke-linecap="round"/>'
+      + '<path d="M56 55 Q60 50 64 55" stroke="#2C4030" stroke-width="2.6" fill="none" stroke-linecap="round"/>'
+      + '<path d="M47 65 L53 65 L50 69Z" fill="#E58B9C"/>'
+      + '<g stroke="#2C4030" stroke-width="1.8" opacity=".55">'
+      + '<path d="M30 64 L18 60"/><path d="M30 68 L18 69"/><path d="M70 64 L82 60"/><path d="M70 68 L82 69"/></g>'
+  };
+  return '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' + body[key] + '</svg>';
+}
+
+/* ===== 八个年龄段（每 12 岁为一档，3—99 岁）===== */
+var DIMS = [
+  { k: 'cur',  name: '好奇',   animal: '松鼠',   icon: 'sq', start: 3,  end: 14, desc: '见到没见过的，脚就挪不动' },
+  { k: 'cour', name: '勇气',   animal: '小鹿',   icon: 'dr', start: 15, end: 26, desc: '害怕也照样往前一步' },
+  { k: 'act',  name: '行动力', animal: '蜜蜂',   icon: 'be', start: 27, end: 38, desc: '想到就动，路上再想' },
+  { k: 'pat',  name: '耐心',   animal: '乌龟',   icon: 'tt', start: 39, end: 50, desc: '能做很久才有结果的事' },
+  { k: 'emp',  name: '共情',   animal: '兔子',   icon: 'rb', start: 51, end: 62, desc: '别人一难受，它最先知道' },
+  { k: 'ord',  name: '秩序',   animal: '刺猬',   icon: 'hg', start: 63, end: 74, desc: '自己的窝，守得清清楚楚' },
+  { k: 'easy', name: '松弛',   animal: '老猫',   icon: 'ct', start: 75, end: 86, desc: '天塌下来先睡一觉' },
+  { k: 'wise', name: '通透',   animal: '猫头鹰', icon: 'ow', start: 87, end: 99, desc: '站得高，看得远，不着急' }
+];
+var DIM_MAP = {};
+DIMS.forEach(function (d) { DIM_MAP[d.k] = d; });
+
+/* ===== 十二个森林小故事 ===== */
+var QUESTIONS = [
+  { icon: 'sq', q: '小松鼠在树洞门口捡到一颗从没见过的蓝果子。', opts: [
+    { d: 'cur',  t: '翻来覆去看，闻一闻，还敲一敲，想弄清这是什么' },
+    { d: 'cour', t: '咬一口试试，大不了闹一晚肚子' },
+    { d: 'act',  t: '叼起来就跑，先搬回家再说' },
+    { d: 'emp',  t: '先想一想：这是谁的？会不会有人正在找它' } ] },
+  { icon: 'be', q: '蜜蜂的蜂蜜罐被撞翻了，金色的一摊流到地上。', opts: [
+    { d: 'pat',  t: '一点一点擦，擦到地上不黏为止' },
+    { d: 'ord',  t: '先把罐子扶正，再按顺序从里往外收拾' },
+    { d: 'easy', t: '算了，反正森林里本来就到处是甜的' },
+    { d: 'wise', t: '蹲下来看蚂蚁来搬，觉得这也挺好' } ] },
+  { icon: 'dr', q: '森林深处传来一声从没听过的响动。', opts: [
+    { d: 'cur',  t: '蹑手蹑脚往那边走，特别想知道是什么' },
+    { d: 'cour', t: '直接喊一嗓子：谁在那儿？' },
+    { d: 'act',  t: '先叫上两个伙伴，一起冲过去看' },
+    { d: 'ord',  t: '先把大家的位置点一遍，确认没有谁落下' } ] },
+  { icon: 'rb', q: '小兔子把刚编好的花环举到你面前。', opts: [
+    { d: 'pat',  t: '小心收进树洞，等过节那天再戴' },
+    { d: 'emp',  t: '认真说谢谢，还问它编了多久' },
+    { d: 'easy', t: '戴上，歪了也不扶，反正挺好看' },
+    { d: 'wise', t: '戴一会儿就摘下来，花还是留在枝上更好' } ] },
+  { icon: 'ow', q: '一只不认识的小鸟蹲在树下，一直在掉眼泪。', opts: [
+    { d: 'cur',  t: '先问：你从哪儿来的？到底发生了什么？' },
+    { d: 'emp',  t: '什么也不问，先挨着它坐下来' },
+    { d: 'act',  t: '转身就跑，去找能帮上忙的人' },
+    { d: 'pat',  t: '等它哭够，再慢慢开口问' } ] },
+  { icon: 'tt', q: '要过一条没有桥的小溪。', opts: [
+    { d: 'cour', t: '卷起裤腿，直接蹚过去' },
+    { d: 'ord',  t: '先找最窄的地方，拿树枝量一量深浅' },
+    { d: 'easy', t: '坐下泡泡脚，等水位自己降下去' },
+    { d: 'wise', t: '绕远一点走，反正也不赶时间' } ] },
+  { icon: 'hg', q: '刺猬在树根下发现一扇从没见过的小木门。', opts: [
+    { d: 'cur',  t: '蹲下来研究门上的花纹，还有那把锁' },
+    { d: 'cour', t: '敲三下，不等回答就直接推开' },
+    { d: 'pat',  t: '先在外面等一等，看看有没有谁出来' },
+    { d: 'ord',  t: '记下位置，回去问问森林里最年长的那棵树' } ] },
+  { icon: 'ct', q: '下雨了，你手里只有一片大荷叶。', opts: [
+    { d: 'emp',  t: '把荷叶往旁边那只小动物头上挪一挪' },
+    { d: 'act',  t: '快点跑，先到能躲雨的地方再说' },
+    { d: 'easy', t: '反正都要湿，慢慢走，还能听听雨声' },
+    { d: 'wise', t: '把荷叶留给更小的那只，自己淋着走' } ] },
+  { icon: 'sq', q: '你发现树背后藏着别人攒下的一堆松果。', opts: [
+    { d: 'cur',  t: '数一数有多少颗，猜是谁藏的' },
+    { d: 'act',  t: '搬回家先存起来，冬天用得着' },
+    { d: 'ord',  t: '一颗都不动，留片叶子写上「我看见了」' },
+    { d: 'wise', t: '看一眼就走，反正不是我的' } ] },
+  { icon: 'rb', q: '好朋友被别的动物说哭了。', opts: [
+    { d: 'cour', t: '站到朋友前面，先把话挡回去' },
+    { d: 'emp',  t: '抱抱它，什么也不说' },
+    { d: 'pat',  t: '陪它坐着，等它自己愿意开口' },
+    { d: 'easy', t: '拉它去吃点儿东西，别在这儿耗着' } ] },
+  { icon: 'ow', q: '冬天快到了，得开始准备过冬的粮食。', opts: [
+    { d: 'cur',  t: '想先尝尝那些从没吃过的存粮' },
+    { d: 'pat',  t: '一样一样慢慢攒，攒够为止' },
+    { d: 'ord',  t: '分三堆放好，标上日期，先吃旧的' },
+    { d: 'wise', t: '够吃就行，不够到时候再说' } ] },
+  { icon: 'dr', q: '森林要开大会，还缺一个站在中间说话的。', opts: [
+    { d: 'cour', t: '我上，站到中间去讲' },
+    { d: 'emp',  t: '先问一圈大家想说什么，我替他们讲' },
+    { d: 'act',  t: '直接开始张罗场地、搬木头、排流程' },
+    { d: 'easy', t: '谁爱讲谁讲，我在下面听着就好' } ] }
+];
+
+/* ===== 八种类型（对应八个年龄段）===== */
+var TYPES = {
+  cur: { name: '刚出窝的小松鼠', line: '你还在问「为什么」，这很珍贵。',
+    traits: ['看见没见过的，脚就挪不动', '总要伸手摸一下才放心', '一个问题能问出三个新问题'],
+    good: '你是森林里最先发现新东西的那一只。别人还在原地，你已经把答案捏在手里了。',
+    bad: '手太快，容易把别人的东西也当成自己的谜题拆开。',
+    todo: '想动一样东西之前，先问一句：这个我可以碰吗？' },
+  cour: { name: '一路小跑的小鹿', line: '你不是不怕，你是怕了还往前走。',
+    traits: ['大家都往后退时，它往前一步', '事后才想起来后怕', '摔了也自己爬起来'],
+    good: '你不是不怕，你是怕了还往前走，这比「不怕」难得多了。',
+    bad: '硬撑的次数太多，会连「我需要帮忙」都说不出口。',
+    todo: '挑一件其实撑不住的小事，主动说一次「帮我一下」。' },
+  act: { name: '忙到飞起的蜜蜂', line: '你跑得比想法还快。',
+    traits: ['想到就动，路上再想', '最听不得「等一等」', '做错了改得快，不太纠结'],
+    good: '别人还在商量，你已经跑完一趟回来了。',
+    bad: '起跑太快，有时会跑错方向，还得原路返回。',
+    todo: '出发前花十秒钟问一句：我这是往哪儿跑？' },
+  pat: { name: '慢慢驮着的乌龟', line: '你慢，但你从来没有停。',
+    traits: ['能做一件很久才有结果的事', '不着急，也不催别人', '慢，但很少返工'],
+    good: '你能熬过别人熬不住的那一段，而且不抱怨。',
+    bad: '太能等，会把「该说的」也一起等没了。',
+    todo: '给自己定一个「必须说话」的时间点，到点就把话说了。' },
+  emp: { name: '耳朵很软的兔子', line: '你先看见别人的难过，再看见自己的。',
+    traits: ['别人一难受，它最先感觉到', '很会看脸色，也容易被脸色影响', '听人说话时，是真的在听'],
+    good: '跟你在一起的人会松一口气，因为不用解释太多。',
+    bad: '太会替别人想，容易把自己的那份委屈悄悄咽掉。',
+    todo: '每天留一句话给自己：「我今天想要什么？」' },
+  ord: { name: '把家守好的刺猬', line: '你把森林收拾得整整齐齐。',
+    traits: ['东西要有位置，事要有顺序', '看到乱的会手痒', '计划一乱就有点烦'],
+    good: '有你在，事情很少乱成一团。',
+    bad: '太讲顺序，会错过那些「没按规矩来但更好」的办法。',
+    todo: '每周故意做一件没计划的事，看看会怎么样。' },
+  easy: { name: '晒太阳的老猫', line: '你什么都不着急，包括变老。',
+    traits: ['天塌下来先睡一觉', '不太着急，也不太解释', '做不完就算了'],
+    good: '你身上有种让人放松的本事，跟你待着不累。',
+    bad: '太松弛，会让身边的人替你着急，久了他们会累。',
+    todo: '挑一件答应过的事，这次认真做完它，只做这一件。' },
+  wise: { name: '站在树顶的猫头鹰', line: '你站得比谁都高，所以不着急落地。',
+    traits: ['事情看得比谁都远', '很少着急，也很少解释', '知道哪些事不值得争'],
+    good: '你看得清哪件事重要、哪件事过两天就没人记得。',
+    bad: '看得太明白，有时会懒得下场，什么都在看着。',
+    todo: '选一件你早就看明白的事，这次别只看着，做一次。' }
+};
+
+/* ===== 状态 ===== */
+var state = { idx: 0, answers: [], age: 0, pts: null, pct: null, type: null, top: null };
+var locked = false;
+var viewCover = document.getElementById('viewCover');
+var viewQuiz = document.getElementById('viewQuiz');
+var viewResult = document.getElementById('viewResult');
+
+function showView(name) {
+  viewCover.hidden = name !== 'cover';
+  viewQuiz.hidden = name !== 'quiz';
+  viewResult.hidden = name !== 'result';
+  window.scrollTo(0, 0);
+}
+
+/* 封面八维度 */
+(function renderDimGrid() {
+  var g = document.getElementById('dimGrid');
+  if (!g) return;
+  g.innerHTML = DIMS.map(function (d) {
+    return '<div class="dim-cell"><div class="ic">' + icon(d.icon) + '</div>'
+      + '<div class="tx"><div class="nm">' + d.name + ' · ' + d.animal + '</div>'
+      + '<div class="ds">' + d.desc + '</div></div></div>';
+  }).join('');
+})();
+
+/* ===== 答题 ===== */
+function renderQuiz() {
+  var i = state.idx;
+  var q = QUESTIONS[i];
+  var picked = state.answers[i];
+  var dots = '';
+  for (var t = 0; t < QUESTIONS.length; t++) {
+    dots += '<i class="' + (t < i ? 'on' : '') + (t === i ? ' now' : '') + '"></i>';
+  }
+  var opts = q.opts.map(function (o, j) {
+    return '<button class="opt' + (picked === j ? ' is-on' : '') + '" data-i="' + j + '">'
+      + '<span class="opt-key">' + 'ABCD'.charAt(j) + '</span>'
+      + '<span class="opt-text">' + o.t + '</span></button>';
+  }).join('');
+
+  viewQuiz.innerHTML =
+    '<div class="wrap">'
+    + '<div class="qbar">'
+    + '<div class="qtop"><span class="qnum"><b>' + (i + 1) + '</b> <em>/ ' + QUESTIONS.length + '</em></span>'
+    + '<span class="qtip">凭第一反应，别多想</span></div>'
+    + '<div class="dots">' + dots + '</div>'
+    + '</div>'
+    + '<div class="scene"><div class="scene-ic">' + icon(q.icon) + '</div><h2 class="qtext">' + q.q + '</h2></div>'
+    + '<div class="opts">' + opts + '</div>'
+    + '<div class="qfoot">' + (i > 0 ? '<button class="lnk" data-act="back">上一题</button>' : '<span></span>')
+    + '<button class="lnk" data-act="restart">重新开始</button></div>'
+    + '</div>';
+}
+
+function pick(j) {
+  if (locked) return;
+  locked = true;
+  state.answers[state.idx] = j;
+  var el = viewQuiz.querySelector('.opt[data-i="' + j + '"]');
+  if (el) el.classList.add('is-on');
+  setTimeout(function () {
+    if (state.idx < QUESTIONS.length - 1) {
+      state.idx++;
+      renderQuiz();
+      showView('quiz');
+    } else {
+      compute();
+      renderResult();
+      showView('result');
+    }
+    locked = false;
+  }, 250);
+}
+
+/* ===== 计分：维度累计 → 落在对应年龄段 → 3—99 岁 ===== */
+function compute() {
+  var pts = {}, sum = 0, wsum = 0;
+  DIMS.forEach(function (d) { pts[d.k] = 0; });
+  state.answers.forEach(function (ai, qi) {
+    var o = QUESTIONS[qi].opts[ai];
+    if (o) pts[o.d] += 3;
+  });
+  var pct = {};
+  DIMS.forEach(function (d) {
+    pct[d.k] = Math.round(pts[d.k] / 18 * 100);
+    var mid = (d.start + d.end) / 2;
+    sum += pts[d.k];
+    wsum += pts[d.k] * mid;
+  });
+  var raw = sum ? Math.round(wsum / sum) : 48;
+
+  var top = DIMS[0];
+  DIMS.forEach(function (d) { if (pts[d.k] > pts[top.k]) top = d; });
+
+  // 落在主导维度对应的年龄段内，保证标签与年龄一致
+  var age = Math.max(top.start, Math.min(top.end, raw));
+  age = Math.max(3, Math.min(99, age));
+
+  state.pts = pts; state.pct = pct; state.age = age; state.top = top;
+  state.type = TYPES[top.k];
+  state.band = top.start + '–' + top.end;
+}
+
+/* ===== 结果 ===== */
+function renderResult() {
+  var age = state.age, type = state.type, top = state.top, pct = state.pct;
+  var bars = DIMS.map(function (d) {
+    return '<div class="brow"><div class="brow-top"><span>' + d.name + ' · ' + d.animal + '</span>'
+      + '<span class="v">' + d.start + '–' + d.end + ' 岁 · ' + pct[d.k] + '%</span></div>'
+      + '<div class="btrack"><span class="bfill' + (d.k === top.k ? ' top' : '') + '" data-w="' + pct[d.k] + '"></span></div></div>';
+  }).join('');
+  var traits = type.traits.map(function (t, i) {
+    return '<li><span class="n">' + (i + 1) + '</span><span>' + t + '</span></li>';
+  }).join('');
+
+  viewResult.innerHTML =
+    '<div class="wrap">'
+    + '<div class="card res-card">'
+    + '<span class="tag res-tag">你的心理年龄</span>'
+    + '<div class="age-circle"><span>' + age + '</span><small>岁</small></div>'
+    + '<p class="age-note">落在 ' + top.start + '–' + top.end + ' 岁这一档 · ' + top.name + '段</p>'
+    + '<div class="res-icon">' + icon(top.icon) + '</div>'
+    + '<h2 class="type-name">' + type.name + '</h2>'
+    + '<p class="type-line">「' + type.line + '」</p>'
+    + '<div class="datebar"><span>森林心理年龄测试</span><span>12 个故事 · 8 个年龄段</span></div>'
+    + '</div>'
+
+    + '<section class="sect"><div class="sect-h"><b>八个维度</b><i></i></div>'
+    + '<div class="bars">' + bars + '</div></section>'
+
+    + '<section class="sect"><div class="sect-h"><b>你身上的三个特征</b><i></i></div>'
+    + '<div class="card" style="padding:6px 16px"><ul class="traits">' + traits + '</ul></div></section>'
+
+    + '<section class="sect"><div class="sect-h"><b>优势与盲区</b><i></i></div>'
+    + '<div class="pair"><div class="pair-item"><div class="pair-k">优势</div><div class="pair-v">' + type.good + '</div></div>'
+    + '<div class="pair-item"><div class="pair-k">盲区</div><div class="pair-v">' + type.bad + '</div></div></div></section>'
+
+    + '<section class="sect"><div class="advice"><div class="advice-k">一句行动建议</div>'
+    + '<p class="advice-v">' + type.todo + '</p></div></section>'
+
+    + '<section class="sect"><div class="sect-h"><b>分享卡片</b><i></i></div>'
+    + '<p class="hint">点按钮存成 1080×1440 的图，直接发笔记就行。</p>'
+    + '<div class="cardwrap"><canvas id="shareCanvas" width="1080" height="1440"></canvas></div>'
+    + '<div class="btn-row"><button class="btn" id="saveBtn">保存分享卡</button>'
+    + '<button class="btn btn-2" id="copyBtn">复制结果文案</button></div></section>'
+
+    + '<div class="restart"><button class="lnk" id="restartBtn">再进一次森林</button></div>'
+    + '</div>';
+
+  setTimeout(function () {
+    var fs = viewResult.querySelectorAll('.bfill');
+    for (var i = 0; i < fs.length; i++) fs[i].style.width = fs[i].getAttribute('data-w') + '%';
+  }, 80);
+
+  drawCard();
+  document.getElementById('saveBtn').onclick = saveCard;
+  document.getElementById('copyBtn').onclick = copyText;
+  document.getElementById('restartBtn').onclick = start;
+}
+
+/* ===== 分享卡片 ===== */
+function rr(c, x, y, w, h, r) {
+  c.beginPath();
+  c.moveTo(x + r, y);
+  c.arcTo(x + w, y, x + w, y + h, r);
+  c.arcTo(x + w, y + h, x, y + h, r);
+  c.arcTo(x, y + h, x, y, r);
+  c.arcTo(x, y, x + w, y, r);
+  c.closePath();
+}
+function wrapText(ctx, text, maxW) {
+  var lines = [], cur = '';
+  for (var i = 0; i < text.length; i++) {
+    var ch = text.charAt(i);
+    if (ctx.measureText(cur + ch).width > maxW && cur) { lines.push(cur); cur = ch; }
+    else cur += ch;
+  }
+  if (cur) lines.push(cur);
+  return lines;
+}
+
+function drawCard() {
+  var cv = document.getElementById('shareCanvas');
+  if (!cv) return;
+  var c = cv.getContext('2d');
+  var W = 1080, H = 1440;
+  var CREAM = '#FBF3DE', PAPER = '#FFFDF4', INK = '#2C4030', INK2 = '#5E7059', INK3 = '#93A08A';
+  var GREEN = '#5C8A54', SUN = '#F2BF48', CORAL = '#ED7A55', LINE = '#E6DCC2';
+  var SANS = '"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif';
+
+  c.fillStyle = CREAM;
+  c.fillRect(0, 0, W, H);
+  c.fillStyle = 'rgba(44,64,48,0.075)';
+  for (var y = 20; y < H; y += 40) {
+    for (var x = 20; x < W; x += 40) {
+      c.beginPath(); c.arc(x, y, 1.6, 0, Math.PI * 2); c.fill();
+    }
+  }
+
+  // 卡片 + 贴纸投影
+  c.fillStyle = 'rgba(44,64,48,0.16)';
+  rr(c, 60, 68, 960, 1320, 44); c.fill();
+  c.fillStyle = PAPER;
+  rr(c, 50, 54, 960, 1320, 44); c.fill();
+  c.strokeStyle = INK; c.lineWidth = 6;
+  rr(c, 50, 54, 960, 1320, 44); c.stroke();
+
+  // 顶部标签
+  c.font = '700 26px ' + SANS;
+  var tagTxt = '森林心理年龄';
+  var tw = c.measureText(tagTxt).width + 56;
+  c.fillStyle = '#FBE3A6';
+  rr(c, (W - tw) / 2, 96, tw, 52, 26); c.fill();
+  c.strokeStyle = INK; c.lineWidth = 3;
+  rr(c, (W - tw) / 2, 96, tw, 52, 26); c.stroke();
+  c.fillStyle = INK; c.textAlign = 'center';
+  c.fillText(tagTxt, W / 2, 132);
+
+  // 年龄圆
+  c.fillStyle = SUN;
+  c.beginPath(); c.arc(540, 330, 132, 0, Math.PI * 2); c.fill();
+  c.strokeStyle = INK; c.lineWidth = 6;
+  c.beginPath(); c.arc(540, 330, 132, 0, Math.PI * 2); c.stroke();
+
+  var numStr = String(state.age);
+  c.font = '800 108px ' + SANS;
+  var nw = c.measureText(numStr).width;
+  c.fillStyle = INK; c.textAlign = 'left';
+  c.fillText(numStr, 540 - nw / 2 - 14, 366);
+  c.font = '800 40px ' + SANS;
+  c.fillText('岁', 540 - nw / 2 - 14 + nw + 8, 366);
+
+  // 类型名
+  c.textAlign = 'center';
+  c.fillStyle = INK;
+  c.font = '800 62px ' + SANS;
+  c.fillText(state.type.name, W / 2, 556);
+
+  // 短句
+  c.fillStyle = CORAL;
+  c.font = '700 32px ' + SANS;
+  var lineTxt = '「' + state.type.line + '」';
+  c.fillText(lineTxt, W / 2, 616);
+
+  // 虚线分隔
+  c.strokeStyle = LINE; c.lineWidth = 3;
+  c.setLineDash([10, 8]);
+  c.beginPath(); c.moveTo(120, 668); c.lineTo(W - 120, 668); c.stroke();
+  c.setLineDash([]);
+
+  // 八条维度
+  var top = 716;
+  DIMS.forEach(function (d, i) {
+    var yy = top + i * 49;
+    c.textAlign = 'left';
+    c.fillStyle = INK2;
+    c.font = '700 24px ' + SANS;
+    c.fillText(d.name, 120, yy + 8);
+    var bx = 260, bw = 520;
+    c.fillStyle = '#EEE5CC';
+    rr(c, bx, yy - 2, bw, 11, 6); c.fill();
+    c.fillStyle = (d.k === state.top.k) ? CORAL : GREEN;
+    var wpx = Math.max(6, bw * state.pct[d.k] / 100);
+    rr(c, bx, yy - 2, wpx, 11, 6); c.fill();
+    c.textAlign = 'right';
+    c.fillStyle = INK3;
+    c.font = '700 22px ' + SANS;
+    c.fillText(state.pct[d.k] + '%', W - 120, yy + 8);
+  });
+
+  // 底部刻度说明
+  c.strokeStyle = LINE; c.lineWidth = 3;
+  c.setLineDash([10, 8]);
+  c.beginPath(); c.moveTo(120, 1128); c.lineTo(W - 120, 1128); c.stroke();
+  c.setLineDash([]);
+
+  c.textAlign = 'center';
+  c.fillStyle = INK;
+  c.font = '800 34px ' + SANS;
+  c.fillText('3 — 99 岁，每 12 岁一档', W / 2, 1190);
+
+  c.fillStyle = INK3;
+  c.font = '400 24px ' + SANS;
+  c.fillText('12 个森林小故事，八只小动物替你做选择。', W / 2, 1238);
+
+  // 底部声明
+  c.textAlign = 'center';
+  c.fillStyle = INK3;
+  c.font = '400 20px ' + SANS;
+  var disc = wrapText(c, '本测试基于大众心理学趣味模型改编，仅供自我觉察参考，不构成心理诊断或治疗建议', 800);
+  disc.forEach(function (l, i) { c.fillText(l, W / 2, 1300 + i * 28); });
+}
+
+function saveCard() {
+  var cv = document.getElementById('shareCanvas');
+  cv.toBlob(function (b) {
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(b);
+    a.download = '森林心理年龄-' + state.age + '岁-' + state.type.name + '.png';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 4000);
+    toast('已存好，去相册或下载里看看');
+  }, 'image/png');
+}
+
+function copyText() {
+  var pct = state.pct;
+  var txt = '森林心理年龄：' + state.age + ' 岁（' + state.band + ' 岁 · ' + state.top.name + '段）｜' + state.type.name + '\n'
+    + '「' + state.type.line + '」\n'
+    + DIMS.map(function (d) { return d.name + ' ' + d.start + '–' + d.end + '岁 ' + pct[d.k] + '%'; }).join(' · ') + '\n'
+    + '本测试基于大众心理学趣味模型改编，仅供自我觉察参考，不构成心理诊断或治疗建议';
+  var done = function () { toast('文案已复制，可以直接粘到评论区'); };
+  function fb() {
+    var ta = document.createElement('textarea');
+    ta.value = txt;
+    ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); done(); } catch (e) { toast('复制失败，长按选中文字吧'); }
+    document.body.removeChild(ta);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(txt).then(done).catch(fb);
+  } else { fb(); }
+}
+
+var toastTimer = null;
+function toast(msg) {
+  var el = document.getElementById('toast');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'toast';
+    el.className = 'toast';
+    document.body.appendChild(el);
+  }
+  el.textContent = msg;
+  el.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(function () { el.classList.remove('show'); }, 2200);
+}
+
+/* ===== 启动 ===== */
+function start() {
+  state.idx = 0;
+  state.answers = [];
+  state.age = 0; state.pts = null; state.pct = null; state.type = null; state.top = null;
+  locked = false;
+  renderQuiz();
+  showView('quiz');
+}
+
+document.getElementById('startBtn').onclick = start;
+
+viewQuiz.addEventListener('click', function (e) {
+  var opt = e.target.closest ? e.target.closest('.opt') : null;
+  if (opt) { pick(Number(opt.getAttribute('data-i'))); return; }
+  var act = e.target.closest ? e.target.closest('[data-act]') : null;
+  if (!act || locked) return;
+  if (act.getAttribute('data-act') === 'back' && state.idx > 0) {
+    state.idx--; renderQuiz(); showView('quiz');
+  } else if (act.getAttribute('data-act') === 'restart') {
+    start();
+  }
+});
+
+document.addEventListener('keydown', function (e) {
+  if (viewQuiz.hidden) return;
+  var m = { '1': 0, '2': 1, '3': 2, '4': 3 }[e.key];
+  if (m !== undefined) pick(m);
+});
+</script>
+</body>
+</html>
